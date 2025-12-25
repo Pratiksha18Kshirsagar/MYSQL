@@ -17,7 +17,11 @@ const Payment = sequelize.define('Payment',
             type: DataTypes.INTEGER,
             allowNull: false
         }
-    }
+    },
+     {
+    tableName: 'payments',
+    timestamps: false
+  }
 );
 
 module.exports = Payment;

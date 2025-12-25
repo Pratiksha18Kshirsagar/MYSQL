@@ -17,6 +17,10 @@ const User = sequelize.define('User',
       allowNull:false
     },
   },
+   {
+    // tableName: 'users',
+    timestamps: false
+  }
 );
 
 module.exports = User;

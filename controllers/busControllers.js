@@ -1,4 +1,4 @@
-const db = require('../utils/database');
+// const db = require('../utils/database');
 const busModel = require("../models/busModel");
 
 const getAllBuses = async(req, res) => {
@@ -10,7 +10,7 @@ try {
     }
     res.status(200).json(buses);
 } catch (error) {
-    res.status(500).json({error:"Failed to get !"});
+    res.status(500).json({error:"Failed to get !",error});
 }
     // db.query('SELECT * FROM buses', (err, results) => {
     //     if (err) {

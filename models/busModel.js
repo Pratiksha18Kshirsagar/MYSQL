@@ -22,6 +22,10 @@ const Bus = sequelize.define('Bus',
       allowNull:false
     },
   },
+  {
+    // tableName: 'buses',
+    timestamps: false
+  }
 );
 
 module.exports = Bus;
